@@ -65,14 +65,8 @@ void loop() {
  if(flag == 0){
    analogWrite(redPin, redTempValue.toInt());
    analogWrite(greenPin, greenTempValue.toInt());
-   analogWrite(bluePin, blueTempValue.toInt());
-   /*Serial.print('R');
-   Serial.println(redTempValue);
-   Serial.print('G');
-   Serial.println(greenTempValue);
-   Serial.print('B');
-   Serial.println(blueTempValue);
-   Serial.print("MESSAGE ");*/
+   analogWrite(bluePin, blueTempValue.toInt()); 
+   
    Serial.println(message);
    flag=1;
        for(i=0; i<12; i++){
